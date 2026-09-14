@@ -5,21 +5,21 @@
 class Trokky < Formula
   desc "CLI for managing Trokky CMS instances"
   homepage "https://github.com/Trokky/cli"
-  version "0.1.7"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Trokky/cli/releases/download/v0.1.7/trokky_0.1.7_darwin_amd64.tar.gz"
-      sha256 "39e88b0cb633e8b6761c8c885b9e9e36bb5b4f9709e048de38e1b70c02a42565"
+      url "https://github.com/Trokky/cli/releases/download/v0.2.0/trokky_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2b416fb3d9cac865e9d172d24616f32e96fd0431247bda5cf011756cf103a768"
 
       define_method(:install) do
         bin.install "trokky"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Trokky/cli/releases/download/v0.1.7/trokky_0.1.7_darwin_arm64.tar.gz"
-      sha256 "8dc5cac9a5d53fde8e166b9ee1735a85b4e293a5d5e58896e33677054b295bdc"
+      url "https://github.com/Trokky/cli/releases/download/v0.2.0/trokky_0.2.0_darwin_arm64.tar.gz"
+      sha256 "8a36e5760193edf474331ee6e4031935ffd037ca9d8ff6a3cdedc1e4322e517d"
 
       define_method(:install) do
         bin.install "trokky"
@@ -29,15 +29,15 @@ class Trokky < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Trokky/cli/releases/download/v0.1.7/trokky_0.1.7_linux_amd64.tar.gz"
-      sha256 "cb0acf81c5963d194d27e6cf0393f5e348659004c9675e35503dc120c3785501"
+      url "https://github.com/Trokky/cli/releases/download/v0.2.0/trokky_0.2.0_linux_amd64.tar.gz"
+      sha256 "3d194133d3289efa11594f941d1462200d6727a38abcd1aa308298c1fe140611"
       define_method(:install) do
         bin.install "trokky"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Trokky/cli/releases/download/v0.1.7/trokky_0.1.7_linux_arm64.tar.gz"
-      sha256 "14f9803f7df0333e2b57061a4ceb9c747bd74c3c30683994cb516e879e28458f"
+      url "https://github.com/Trokky/cli/releases/download/v0.2.0/trokky_0.2.0_linux_arm64.tar.gz"
+      sha256 "7d7b27ba194fe20583b997bc7677337c715b9960c23d48df7d64b37f13ae9b6e"
       define_method(:install) do
         bin.install "trokky"
       end
